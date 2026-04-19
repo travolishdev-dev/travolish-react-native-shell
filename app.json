@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "travolish-app-reactnative",
+    "slug": "travolish-app-reactnative",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "extra": {
+      "eas": {
+        "projectId": "2262e675-1011-4a59-b471-44862b530e0f"
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "defaultChannel": "default"
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.sambeet.travolishapp",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Travolish to access the camera so you can upload images and documents from the site.",
+        "NSLocationWhenInUseUsageDescription": "Allow Travolish to use your location to personalize trip and booking details.",
+        "NSMicrophoneUsageDescription": "Allow Travolish to access the microphone when the site needs audio capture.",
+        "NSPhotoLibraryUsageDescription": "Allow Travolish to access your photo library so you can upload files from the site."
+      }
+    },
+    "android": {
+      "package": "com.sambeet.travolishapp",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "READ_MEDIA_AUDIO",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "RECORD_AUDIO",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
